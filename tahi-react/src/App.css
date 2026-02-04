@@ -11,6 +11,34 @@ body {
   background: whitesmoke;
   color: var(--text);
 }
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero {
+  height: 80vh;
+  overflow: hidden;
+  padding: 0;
+}
+.product-scroll {
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tagline {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  white-space: nowrap;
+}
 
 /* HEADER */
 .header {

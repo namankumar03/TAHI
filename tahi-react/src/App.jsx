@@ -6,11 +6,12 @@ function App() {
     <>
       {/* HEADER */}
       <header className="header">
-        <h1 className="logo">
+        <div className="logo-group">
           <a href="#">
             <img src={logo} alt="Tahi Logo" className="logo-img" />
           </a>
-        </h1>
+          <span className="tagline">The Artisanal House of Indulgence</span>
+        </div>
 
         <nav>
           <a href="#products">Menu</a>
@@ -29,10 +30,9 @@ function App() {
 
       {/* HERO */}
       <section className="hero">
-        <h1>The Artisanal House of Indulgence</h1>
-        <p>
-          Handcrafted entremets, cakes, cookies, and delights made with care and craft.
-        </p>
+        <video className="hero-video" autoPlay muted loop playsInline>
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
       </section>
 
       {/* STORY */}
@@ -54,14 +54,14 @@ function App() {
         <h2 className="section-title">Our Menu</h2>
 
         <h3 className="sub-title">Entremets & Cakes</h3>
-        <div className="grid">
-          <div className="product">
+        <div className="product-scroll">
+          <div className="grid">
             <img src={placeholder} />
             <h3>Raspberry Velvet Entremet</h3>
             <p>Silky vanilla mousse with raspberry confit and almond sponge.</p>
           </div>
 
-          <div className="product">
+          <div className="grid">
             <img src={placeholder} />
             <h3>Dark Truffle Cake</h3>
             <p>Rich 70% chocolate ganache layered with soft sponge.</p>
@@ -69,14 +69,14 @@ function App() {
         </div>
 
         <h3 className="sub-title spaced">Cookies & Bars</h3>
-        <div className="grid">
-          <div className="product">
+        <div className="product-scroll">
+          <div className="grid">
             <img src={placeholder} />
             <h3>Brown Butter Chocolate Chunk</h3>
             <p>Soft-baked cookie with nutty brown butter and couverture chocolate.</p>
           </div>
 
-          <div className="product">
+          <div className="grid">
             <img src={placeholder} />
             <h3>Hazelnut Praline Bar</h3>
             <p>Crispy wafer, hazelnut praline and creamy chocolate.</p>
